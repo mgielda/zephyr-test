@@ -11,4 +11,6 @@ jobs:
 
       - name: Test
         run: |
-          git checkout https://github.com/zephyrproject-rtos/zephyr
+          git clone https://github.com/zephyrproject-rtos/zephyr
+          cd zephyr
+          west build -p auto -b arduino_nano_33_ble samples/hello_world
