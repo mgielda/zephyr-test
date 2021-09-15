@@ -9,13 +9,6 @@ jobs:
     container: docker.io/zephyrprojectrtos/zephyr-build:latest
     steps:
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: |
-          sudo apt update -y
-
       - name: Test
         run: |
           ls
