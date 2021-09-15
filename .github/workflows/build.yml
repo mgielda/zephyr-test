@@ -5,8 +5,10 @@ on:
 
 jobs:
   build:
-    runs-on: docker.io/zephyrprojectrtos/zephyr-build:latest
+    runs-on: ubuntu-latest
+    container: docker.io/zephyrprojectrtos/zephyr-build:latest
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
