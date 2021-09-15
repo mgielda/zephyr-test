@@ -11,4 +11,4 @@ jobs:
 
       - name: Test
         run: |
-          ls
+          git checkout https://github.com/zephyrproject-rtos/zephyr
